@@ -149,7 +149,7 @@ Nesta tarefa, você irá alterar a saudação específica para COVID-19.
 
 Neste exercício, você publicará o bot.
 
-1.  No painel de navegação esquerdo, selecione ** Publicar**.
+1.  No painel de navegação esquerdo, selecione **Publicar**.
 
 2.  Clique em **Publicar**.
 

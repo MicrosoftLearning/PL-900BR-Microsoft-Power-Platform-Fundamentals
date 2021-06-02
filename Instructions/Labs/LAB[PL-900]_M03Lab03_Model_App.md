@@ -140,7 +140,7 @@ Agora, vamos clonar a exibição e criar uma nova para as visitas de hoje.
 
 14.  Inclua os campos **Início real** e **Fim real** à exibição. 
 
-    > **Observação:** como não filtramos mais no status de exibição, obteremos todas as visitas de hoje incluindo as concluídas. Esses campos ajudarão a diferenciar as visitas concluídas e as visitas em andamento.
+> **Observação:** como não filtramos mais no status de exibição, obteremos todas as visitas de hoje incluindo as concluídas. Esses campos ajudarão a diferenciar as visitas concluídas e as visitas em andamento.
 
 15.  Clique na **seta da lista suspensa** ao lado do botão Salvar (cuidado para não pressionar o botão) e selecione **Salvar como**.
 
