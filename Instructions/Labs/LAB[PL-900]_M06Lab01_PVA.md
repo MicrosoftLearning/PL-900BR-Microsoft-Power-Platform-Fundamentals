@@ -135,7 +135,7 @@ Nesta tarefa, você irá alterar a saudação específica para COVID-19.
 
 4.  O tópico de saudação tem 52 frases de gatilho, clique em **Ir para a tela de autoria**.
 
-5.  Vá para a primeira mensagem e substitua por `Oi, sou um agente virtual. Posso falar sobre como a COVID-19 é transmitida, como se proteger, como preparar sua casa e família para a COVID-19, sintomas, testes e muito mais`.
+5.  Vá para a primeira mensagem e substitua por `Hi, I’m a virtual agent. I can tell you about how COVID-19 spreads, how to protect yourself, preparing your home and family for COVID-19, symptoms, testing, and more.`
 
 6.  Clique em **Salvar**.
 
@@ -159,7 +159,7 @@ Neste exercício, você publicará o bot.
 
 5.  Você receberá uma lista de canais disponíveis nos quais você pode publicar o bot. Selecione **Site de demonstração**.
 
-6.  Altere a mensagem de boas-vindas para `Teste meu bot de perguntas frequentes sobre a COVID-19`.
+6.  Altere a mensagem de boas-vindas para `Try my COVID-19 FAQ bot`.
 
 7.  Insira o seguinte **Iniciador de conversa**:
     ```

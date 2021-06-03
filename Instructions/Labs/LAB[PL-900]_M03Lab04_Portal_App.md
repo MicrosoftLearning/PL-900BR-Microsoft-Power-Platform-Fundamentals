@@ -6,7 +6,7 @@ lab:
 
 # Módulo 3: Introdução ao Power Apps
 
-## ‘Laboratório 4: Como criar um portal do Power Apps'
+## Laboratório 4: Como criar um portal do Power Apps
 
 ### Aviso importante (vigente a partir de novembro de 2020):
 O nome do Common Data Service passou a ser Microsoft Dataverse. Algumas terminologias no Microsoft Dataverse foram atualizadas. Por exemplo: "entidade" passou a ser “tabela”. Os campos e registros nos bancos de dados do Dataverse agora são chamados de colunas e linhas.
@@ -78,9 +78,9 @@ Seguiremos o esquema abaixo para projetar o portal do Power Apps:
 
     -   Passe o mouse sobre **Layouts fixos** e escolha **Página com título**
 
-3.  No painel de propriedades, em **Exibição**, troque o **Nome** de **Nova página nova (1)** para `Diretório de prédios`.
+3.  No painel de propriedades, em **Exibição**, troque o **Nome** de **Nova página nova (1)** para `Building Directory`.
 
-4.  Em **URL parcial**, troque o valor para `diretorio-de-predios` e pressione a tecla Tab (para iniciar o salvamento automático).
+4.  Em **URL parcial**, troque o valor para `building-directory` e pressione a tecla Tab (para iniciar o salvamento automático).
 
     > O título da página agora deve ser **Diretório de prédios**.
     
@@ -104,7 +104,7 @@ Seguiremos o esquema abaixo para projetar o portal do Power Apps:
 
     -   Na nova área de texto, insira o seguinte texto:
           ```
-          Abaixo está o diretório de prédios.
+> Abaixo está o diretório de prédios.
           ```
     -   Selecione a caixa de texto acima daquela que você acabou de editar e clique em **Excluir** na barra de comandos para remover o texto padrão.
 
@@ -156,7 +156,7 @@ Seguiremos o esquema abaixo para projetar o portal do Power Apps:
 
     -   Selecione o componente lista na tela.
 
-    -   No painel de propriedades (lado direito), digite `Lista de prédios` no campo **Nome**
+    -   No painel de propriedades (lado direito), digite `Buildings List` no campo **Nome**
 
     -   No campo **Tabela**, escolha **Building (bc_building)** na lista suspensa.
 

@@ -160,8 +160,7 @@ Agora, vamos clonar a exibição e criar uma nova para as visitas de hoje.
 
     -   Entre em <https://make.powerapps.com>
 
-    -   No ambiente, clique para abrir a solução **Gerenciamento de Campus**
-        .
+    -   No ambiente, clique para abrir a solução **Gerenciamento de Campus**.
     
 2.  Criar aplicativo baseado em modelo
 
@@ -231,13 +230,13 @@ Agora, vamos clonar a exibição e criar uma nova para as visitas de hoje.
 
 10.  Clique em **Salvar e fechar** para fechar o editor do mapa do site. 
 
-    > Você verá que os recursos para as entidades adicionadas ao mapa do site agora estão no aplicativo.
+> Você verá que os recursos para as entidades adicionadas ao mapa do site agora estão no aplicativo.
      
 11.  Clique em **Salvar** no Designer de aplicativo.
 
 12.  Clique em **Validar** para confirmar as mudanças feitas no aplicativo. 
 
-    >  Alguns avisos serão exibidos, mas ignore-os, pois não foi feita referência a uma Exibição e um Formulário específico para as entidades e os usuários terão acesso a todas as Exibições e os Formulários para as entidades **Visitas** e **Edifício**.
+>  Alguns avisos serão exibidos, mas ignore-os, pois não foi feita referência a uma Exibição e um Formulário específico para as entidades e os usuários terão acesso a todas as Exibições e os Formulários para as entidades **Visitas** e **Edifício**.
      
 13. Clique em **Publicar**
 
@@ -263,7 +262,7 @@ Agora, vamos clonar a exibição e criar uma nova para as visitas de hoje.
 
     -   Clique em **Novo** no menu superior.
 
-    -   Informe o **Nome** como `João` e o **Sobrenome** como `Silva`.
+    -   Informe o **Nome** como `John` e o **Sobrenome** como `Doe`.
 
     -   Informe seu email pessoal como **e-mail**. Ele será usado em um próximo laboratório. 
     
@@ -277,7 +276,7 @@ Agora, vamos clonar a exibição e criar uma nova para as visitas de hoje.
 
     -   Clique em **Novo**.
 
-    -   Insira o **Nome** como `Edifício da Microsoft`
+    -   Insira o **Nome** como `Microsoft Building`
         
     -   Clique em **Salvar e fechar**. O registro recém-criado aparecerá na
         exibição Edifícios ativos.
@@ -290,7 +289,7 @@ Agora, vamos clonar a exibição e criar uma nova para as visitas de hoje.
     
     -   Preencha os campos da seguinte maneira 
     
-        -   **Nome**: `Nova visita de teste`
+        -   **Nome**: `New test visit`
         -   **Edifício**: selecione Edifício da Microsoft
         -   **Visitante**: selecione João Silva
         -   **Início agendado**: selecione a data de amanhã e 14h como hora de início

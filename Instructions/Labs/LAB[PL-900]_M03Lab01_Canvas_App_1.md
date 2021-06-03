@@ -180,7 +180,7 @@ Nesta tarefa você configurará a galeria pré-gerada para exibir o título, a d
 
 5.  Na visualização do aplicativo, selecione o primeiro campo ‘Data e Hora’ na galeria.
 
-6.  Na barra da fórmula, na parte superior, troque **ThisItem.’Created On** por `ThisItem.'Scheduled Start'`.
+6.  Na barra da fórmula, na parte superior, troque **ThisItem.'Created On'** por `ThisItem.'Scheduled Start'`.
 
 7.  Selecione novamente o campo.
 
@@ -188,7 +188,7 @@ Nesta tarefa você configurará a galeria pré-gerada para exibir o título, a d
 
 9.  Usando o mouse ou o teclado, mova o controle copiado para baixo e o alinhe com os outros controles na galeria, abaixo do outro campo Data e Hora.
 
-10.  Na barra da fórmula, na parte superior, troque **ThisItem.’Scheduled Start’** por `ThisItem.'Scheduled End'`.
+10.  Na barra da fórmula, na parte superior, troque **ThisItem.'Scheduled Start'** por `ThisItem.'Scheduled End'`.
 
 11.  Para salvar o trabalho em andamento, clique em **Arquivo** e depois em **Salvar**. Use a seta de voltar para retornar ao aplicativo.
 

@@ -107,7 +107,7 @@ Siga a estrutura de tópicos abaixo para desenvolver o aplicativo de tela:
 
     -   Enquanto seleciona o objeto de entrada de Texto, escolha o texto na propriedade **Padrão** e limpe o valor.
     
-    -   Selecione a propriedade **Dica de Texto** e digite `"Inserir código do visitante"` como o valor (incluindo as aspas)
+    -   Selecione a propriedade **Dica de Texto** e digite `"Enter visitor code"` como o valor (incluindo as aspas)
     
     -   Clique em **...** ao lado do nome do controle na visualização em árvore (TextInput1), selecione **Renomear** e altere o nome para `textCode`
     

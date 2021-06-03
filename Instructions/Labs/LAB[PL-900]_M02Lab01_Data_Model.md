@@ -119,7 +119,7 @@ A sua solução conterá várias tabelas após a conclusão de todas as personal
     
 10.  Clique em **Adicionar** novamente. A tabela Contato com a Exibição e o Formulário selecionados será adicionada à solução recém-criada. 
     
-    > Sua solução agora deve ter uma tabela: Contato.
+> Sua solução agora deve ter uma tabela: Contato.
 
 ## Tarefa 2: Criar a tabela Edifício
 
