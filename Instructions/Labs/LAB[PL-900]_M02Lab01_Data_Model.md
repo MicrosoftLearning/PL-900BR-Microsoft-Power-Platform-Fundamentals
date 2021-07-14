@@ -1,4 +1,4 @@
----
+﻿---
 lab:
     title: 'Laboratório 1: Modelagem de dados'
     module: 'Módulo 2: Introdução ao Microsoft Dataverse'
@@ -7,20 +7,18 @@ lab:
 # Módulo 2: Introdução ao Microsoft Dataverse
 ## Laboratório: Modelagem de dados
 
-### Aviso importante (em vigor em novembro de 2020):
-O Common Data Service foi renomeado como Microsoft Dataverse. Alguns termos no Microsoft Dataverse foram atualizados. Por exemplo, o termo entidade agora é tabela. Os campos e registros nos bancos de dados do Dataverse agora são chamados de colunas e linhas.
+### Aviso importante (Em vigor a partir de novembro de 2020):
+O Common Data Service foi renomeado para Microsoft Dataverse. Algumas terminologias no Microsoft Dataverse foram atualizadas. Por exemplo, a entidade (agora, **tabela**), o campo (agora, **coluna**) e o registro (agora **linha**) podem estar desatualizados. Lembre-se disso ao participar do laboratório. Esperamos atualizar todo o conteúdo em breve.
 
-Embora os aplicativos estejam em processo de atualização da experiência do usuário, algumas referências à terminologia do Microsoft Dataverse, como entidade (agora **tabela**), campo (agora **coluna**) e registro (agora **linha**), podem estar desatualizadas. Lembre-se disso ao trabalhar nos laboratórios.
-
-Para obter mais informações e uma lista completa dos termos afetados, visite [O que é o Microsoft Dataverse?](https://docs.microsoft.com/pt-br/powerapps/maker/common-data-service/data-platform-intro#terminology-updates)
+Para obter mais informações e uma lista completa de termos afetados, visite [O que é o Microsoft Dataverse?](https://docs.microsoft.com/pt-br/powerapps/maker/common-data-service/data-platform-intro#terminology-updates)
 
 # Cenário
 
-O Bellows College é uma organização educacional com vários edifícios no campus. Atualmente, as visitas ao campus são registradas em diários de papel. As informações não são capturadas de forma consistente e não há meios de coletar e analisar dados sobre as visitas em todo o campus. 
+O Bellows College é uma organização educacional que possui um campus com vários edifícios. Atualmente, as visitas ao campus são registradas em diários de papel. As informações não são coletadas de forma consistente e não há meios de analisar os dados sobre as visitas em todo o campus. 
 
-A administração do campus gostaria de modernizar seu sistema de registro de visitantes, onde o acesso aos edifícios fosse controlado pelo pessoal da segurança e todas as visitas fossem pré-registradas e gravadas por seus anfitriões.
+A administração do campus quer modernizar o sistema de registro de visitantes, com controle do acesso aos edifícios pelo pessoal de segurança, além de exigência de notificação prévia e registro de todas as visitas pelos anfitriões.
 
-Ao longo deste curso, você criará aplicativos e realizará a automação para permitir que a administração e o pessoal da segurança do Bellows College gerenciem e controlem o acesso aos edifícios do campus. 
+Ao longo deste curso, você vai criar aplicativos e fazer automações para permitir que a administração e a equipe de segurança do Bellows College gerenciem e controlem o acesso aos edifícios no campus. 
 
 Neste laboratório, você acessará seu ambiente, criará um banco de dados do Microsoft Dataverse e desenvolverá uma solução para rastrear suas alterações. Você também criará um modelo de dados para oferecer suporte aos seguintes requisitos:
 
@@ -30,12 +28,12 @@ Neste laboratório, você acessará seu ambiente, criará um banco de dados do M
 
 Por fim, você importará dados de amostra para o Microsoft Dataverse.
 
-# Etapas de laboratório de alto nível
+# Macroetapas do laboratório
 
 Para preparar seus ambientes de aprendizagem, você irá:
 
 * criar uma solução e um editor
-* adicionar componentes novos e existentes, necessários para atender aos requisitos do aplicativo. Consulte o [documento de modelagem de dados](https://raw.githubusercontent.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/update-march-2021/Allfiles/Campus%20Management.png) para ver a descrição dos metadados (tabelas e relacionamentos). Você pode pressionar CTRL+clique ou clicar com o botão direito do mouse no link para abrir o documento de modelagem de dados em uma nova janela.
+* adicionar componentes novos e existentes, necessários para atender aos requisitos do aplicativo. Consulte o [documento de modelagem de dados](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/blob/master/Allfiles/Campus%20Management.png) para ver a descrição dos metadados (tabelas e relacionamentos). Você pode pressionar CTRL+clique ou clicar com o botão direito do mouse no link para abrir o documento de modelagem de dados em uma nova janela.
 
 A sua solução conterá várias tabelas após a conclusão de todas as personalizações:
 
@@ -45,7 +43,7 @@ A sua solução conterá várias tabelas após a conclusão de todas as personal
 
 ## Pré-requisitos:
 
-* Conclusão do **Módulo 0 Laboratório 0 - Validar ambiente de laboratório**
+* Conclusão do **Módulo 0 Laboratório 0 - Validação do ambiente de laboratório**
 
 ## Considere estes itens antes de começar:
 
@@ -55,13 +53,13 @@ A sua solução conterá várias tabelas após a conclusão de todas as personal
 
 * Formato de data e hora para facilitar a localização
 
-# Exercício 1: Criar uma solução
+# Exercício \#1: Criar uma solução
 
 ## Tarefa 1: Criar uma solução e um editor
 
 1.  Criar uma solução
 
-    -   Navegue até <https://make.powerapps.com>. Talvez seja necessário reautenticar - clique em **Entrar** e siga as instruções, se necessário.
+    -   Acesse <https://make.powerapps.com>. Talvez seja necessário reautenticar - clique em **Entrar** e siga as instruções, se necessário.
 
     -   Selecione o seu ambiente clicando em **Ambiente**, no canto superior direito da tela, e escolhendo o seu ambiente no menu suspenso.
 
@@ -90,7 +88,7 @@ A sua solução conterá várias tabelas após a conclusão de todas as personal
     
     -   Clique em **Criar**.
 
-# Exercício 2: Adicionar tabelas existentes e criar novas tabelas
+# Exercício \#2: Adicionar tabelas existentes e criar novas tabelas
 
 **Objetivo:** Neste exercício, você adicionará a tabela Contato padrão e criará novas tabelas personalizadas para Edifícios e Visitas na solução. 
 
@@ -119,7 +117,7 @@ A sua solução conterá várias tabelas após a conclusão de todas as personal
     
 10.  Clique em **Adicionar** novamente. A tabela Contato com a Exibição e o Formulário selecionados será adicionada à solução recém-criada. 
     
-> Sua solução agora deve ter uma tabela: Contato.
+    > Sua solução agora deve ter uma tabela: Contato.
 
 ## Tarefa 2: Criar a tabela Edifício
 
@@ -146,7 +144,7 @@ Gostaríamos de atribuir a cada visita um número exclusivo que pode ser facilme
 
 > Usamos o comportamento **Independente de fuso horário** para registrar informações de data e hora porque o horário de uma visita é sempre local em relação à localização do edifício e não deve mudar quando visualizado de um fuso horário diferente. 
 
-1.  Selecione a solução **Gerenciamento de Campus**
+1.  Escolha a solução **Gerenciamento de campus**
 
 2. Criar a tabela Visita
 
@@ -234,7 +232,7 @@ Gostaríamos de atribuir a cada visita um número exclusivo que pode ser facilme
     
 8.  Clique em **Salvar tabela**
 
-# Exercício 3: Criar relacionamentos
+# Exercício \#3: Criar relacionamentos
 
 **Objetivo:** Neste exercício, você adicionará relacionamentos entre as tabelas.
 
@@ -266,7 +264,7 @@ Gostaríamos de atribuir a cada visita um número exclusivo que pode ser facilme
 
 5.  No menu superior, selecione **Soluções** e clique em **Publicar todas as personalizações**.
 
-# Exercício 4: Importar dados
+# Exercício \#4: Importar dados
 
 **Objetivo:** Neste exercício, você importará dados de amostra para o banco de dados do Dataverse.
 
@@ -274,7 +272,7 @@ Gostaríamos de atribuir a cada visita um número exclusivo que pode ser facilme
 
 Nesta tarefa, você importará uma solução que contém o fluxo do Power Automate necessário para concluir a importação de dados.
 
-1. Você deve ter o arquivo **DataImport_managed.zip** armazenado no seu Desktop. Se ainda não tiver baixado, baixe a [Solução de importação de dados](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/blob/update-march-2021/Allfiles/DataImport_managed.zip?raw=true).
+1. Você deve ter o arquivo **DataImport_managed.zip** armazenado no seu Desktop. Se ainda não tiver baixado, baixe a [Solução de importação de dados](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/blob/master/Allfiles/DataImport_managed.zip?raw=true).
 
 2. Faça login em <https://make.powerapps.com>.
 
@@ -312,7 +310,7 @@ Nesta tarefa, você importará uma solução que contém o fluxo do Power Automa
 
 2. Verifique o **Status** do fluxo **Importar dados**.
 
-3. Se **Status** estiver **Desativado**, selecione **...** ao lado de **Importar dados** e, em seguida, selecione **Ativar**.
+3. Se **Status** estiver **Desativado**, selecione **[...]** ao lado de **Importar dados** e, em seguida, selecione **Ativar**.
 
    > **Importante:** Se você receber uma mensagem de erro, verifique se as tabelas e colunas criadas correspondem às instruções acima.
 
