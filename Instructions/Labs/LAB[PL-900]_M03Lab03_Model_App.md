@@ -8,23 +8,21 @@ lab:
 ## Laboratório 3: Como criar um aplicativo baseado em modelo
 
 ### Aviso importante (Em vigor a partir de novembro de 2020):
-O nome Common Data Service mudou para Microsoft Dataverse. Parte da terminologia do Microsoft Dataverse foi atualizada. Por exemplo, entidade agora é tabela. Campos e registros nos bancos de dados do Dataverse agora são chamados de colunas e linhas.
-
-Alguns aplicativos estão atualizando a experiência do usuário, portanto algumas referências à terminologia do Microsoft Dataverse, como entidade (agora **tabela**), campo (agora **coluna**) e registro (agora **linha**) podem estar desatualizadas. Lembre-se disso ao participar do laboratório. Esperamos atualizar todo o conteúdo em breve. 
+O Common Data Service foi renomeado para Microsoft Dataverse. Algumas terminologias no Microsoft Dataverse foram atualizadas. Por exemplo, a entidade (agora, **tabela**), o campo (agora, **coluna**) e o registro (agora **linha**) podem estar desatualizados. Lembre-se disso ao participar do laboratório. Esperamos atualizar todo o conteúdo em breve.
 
 Para obter mais informações e uma lista completa de termos afetados, visite [O que é o Microsoft Dataverse?](https://docs.microsoft.com/pt-br/powerapps/maker/common-data-service/data-platform-intro#terminology-updates)
 
 # Cenário
 
-Bellows College é uma organização educacional com um campus com diversos edifícios. Atualmente, os visitantes do campus são registrados em um diário de papel. As informações não são coletadas de maneira coerente e não há como coletar e analisar os dados dos visitantes em todo o campus. 
+O Bellows College é uma organização educacional que possui um campus com vários edifícios. Atualmente as visitas ao campus são anotadas em papel. As informações não são coletadas de forma consistente e não há meios de analisar os dados sobre as visitas em todo o campus. 
 
-A administração do campus pretende modernizar o sistema de registro de visitantes. Hoje em dia, o acesso aos edifícios é controlado pela equipe de segurança e todas as visitas precisam ser pré-registradas e lançadas pelos anfitriões.
+A administração do campus quer modernizar o sistema de registro de visitantes, com controle do acesso aos edifícios pelo pessoal de segurança, além de exigência de notificação prévia e registro de todas as visitas pelos anfitriões.
 
-Ao longo deste curso, você criará aplicativos e usará a automação para que as equipes de administração e segurança do Bellows College possam gerenciar e controlar o acesso aos edifícios do campus. 
+Ao longo deste curso, você vai criar aplicativos e fazer automações para permitir que a administração e a equipe de segurança do Bellows College gerenciem e controlem o acesso aos edifícios no campus. 
 
 Neste laboratório, você criará um aplicativo baseado em modelo do Power Apps para permitir que a equipe de apoio gerencie os registros de visitação de todo o campus.
 
-# Etapas gerais do laboratório
+# Macroetapas do laboratório
 
 Você fará o seguinte para criar o aplicativo baseado em modelo:
 
@@ -44,10 +42,10 @@ Ambos serão integrados ao aplicativo baseado em modelo para oferecer uma melhor
 
 ## Pré-requisitos
 
-* Conclusão do **Módulo 0 Laboratório 0 - Validar ambiente do laboratório**
+* Conclusão do **Módulo 0 Laboratório 0 - Validação do ambiente de laboratório**
 * Conclusão do **Módulo 2 Laboratório 1 - Introdução ao Microsoft Dataverse**
 
-## Considere estes itens antes de começar
+## Considerações antes de começar
 
 -   Que mudanças precisamos fazer para melhorar a experiência do usuário?
 
@@ -56,11 +54,11 @@ Ambos serão integrados ao aplicativo baseado em modelo para oferecer uma melhor
 -   Quais personalizações podem ser feitas no mapa do site de um aplicativo baseado em modelo?
 
 
-# Exercício nº 1: Personalizar exibições e formulários
+# Exercício \#1: Personalizar exibições e formulários
 
 **Objetivo:** Neste exercício, você vai personalizar as exibições e os formulários das tabelas personalizadas que serão usadas no aplicativo baseado em modelo.
 
-## Tarefa nº 1: Editar o formulário de visitas
+## Tarefa 1: Editar o formulário de visitas
 
 1.  Entre em <https://make.powerapps.com> se ainda não tiver feito isso.
 
@@ -100,7 +98,7 @@ Ambos serão integrados ao aplicativo baseado em modelo para oferecer uma melhor
 13.  Clique em **Voltar** na parte superior esquerda da tela. Você deve estar de volta à
      guia Formulários de entidade de visita.
 
-## Tarefa nº 2: Editar exibições de visita
+## Tarefa 2: Editar exibições de visita
 
 Nesta tarefa, vamos modificar a exibição Visitas ativas e criar uma nova exibição para as visitas de hoje.
 
@@ -134,7 +132,7 @@ Agora, vamos clonar a exibição e criar uma nova para as visitas de hoje.
 
 11.  Selecione **Início agendado** como um campo, depois selecione **Hoje** como a condição na lista suspensa. 
 
-12.  Clique em **...** na linha **Status** e clique em **Excluir**. 
+12.  Clique em **[...]** na linha **Status** e clique em **Excluir**. 
 
 13.  Pressione **Ok** para salvar a condição. A exibição agora é filtrada para mostrar somente registros em que a data de Início agendado é hoje.
 
@@ -148,19 +146,20 @@ Agora, vamos clonar a exibição e criar uma nova para as visitas de hoje.
 
 17.  Clique em **Publicar** e espere a conclusão da publicação.
 
-# Exercício nº 2: Criar aplicativo baseado em modelo
+# Exercício \#2: Criar aplicativo baseado em modelo
 
 **Objetivo:** Neste exercício, você vai criar o aplicativo baseado em modelo, personalizar o mapa do site e testar o aplicativo.
 
 > Você verá diversos campos sem endereço ao construir o aplicativo, especialmente nas etapas de mapa do site. Tomamos alguns atalhos para criar os laboratórios. Em uma implementação real, você daria nomes lógicos a esses itens.
 
-## Tarefa nº 1: Criar aplicativo
+## Tarefa 1: Criar aplicativo
 
 1.  Abra a solução de Gerenciamento de Campus se já não tiver feito isso.
 
-    -   Entre em <https://make.powerapps.com>
+    -   Faça login em <https://make.powerapps.com>
 
-    -   No ambiente, clique para abrir a solução **Gerenciamento de Campus**.
+    -   No ambiente, clique para abrir a solução **Gerenciamento de Campus**
+        .
     
 2.  Criar aplicativo baseado em modelo
 
@@ -230,7 +229,7 @@ Agora, vamos clonar a exibição e criar uma nova para as visitas de hoje.
 
 10.  Clique em **Salvar e fechar** para fechar o editor do mapa do site. 
 
-> Você verá que os recursos para as entidades adicionadas ao mapa do site agora estão no aplicativo.
+    > Você verá que os recursos para as entidades adicionadas ao mapa do site agora estão no aplicativo.
      
 11.  Clique em **Salvar** no Designer de aplicativo.
 
@@ -248,11 +247,11 @@ Agora, vamos clonar a exibição e criar uma nova para as visitas de hoje.
 
 17.  Selecione **Aplicativos** e seu aplicativo aparecerá na lista.
 
-## Tarefa nº 2: Testar o aplicativo
+## Tarefa 2: Testar o aplicativo
 
 1.  Inicie o aplicativo
 
-    -   Selecione **Aplicativos** e clique no aplicativo **Gerenciamento de Campus**. (Se você não vir o aplicativo, atualize o navegador.) 
+    -   Selecione **Aplicativos** e clique no aplicativo **Gerenciamento de Campus**. (Se você não vir o aplicativo, atualize o navegador.)
 
     -   O aplicativo será aberto em uma nova janela.
     

@@ -8,16 +8,14 @@ lab:
 
 ## Laboratório 4: Como criar um portal do Power Apps
 
-### Aviso importante (vigente a partir de novembro de 2020):
-O nome do Common Data Service passou a ser Microsoft Dataverse. Algumas terminologias no Microsoft Dataverse foram atualizadas. Por exemplo: "entidade" passou a ser “tabela”. Os campos e registros nos bancos de dados do Dataverse agora são chamados de colunas e linhas.
+### Aviso importante (Em vigor a partir de novembro de 2020):
+O Common Data Service foi renomeado para Microsoft Dataverse. Algumas terminologias no Microsoft Dataverse foram atualizadas. Por exemplo, a entidade (agora, **tabela**), o campo (agora, **coluna**) e o registro (agora **linha**) podem estar desatualizados. Lembre-se disso ao participar do laboratório. Esperamos atualizar todo o conteúdo em breve. 
 
-A experiência do usuário nos aplicativos ainda está em processo de atualização, mas algumas referências à terminologia do Microsoft Dataverse podem estar desatualizadas, como entidade (agora **tabela**), campo (agora **coluna**) e registro (agora **linha**). Lembre-se disso ao trabalhar nos laboratórios. Estamos trabalhando para o conteúdo estar totalmente atualizado em breve. 
-
-Para saber mais e ver a lista completa dos termos alterados, veja [O que é o Microsoft Dataverse?](https://docs.microsoft.com/pt-br/powerapps/maker/common-data-service/data-platform-intro#terminology-updates)
+Para obter mais informações e uma lista completa de termos afetados, visite [O que é o Microsoft Dataverse?](https://docs.microsoft.com/pt-br/powerapps/maker/common-data-service/data-platform-intro#terminology-updates)
 
 # Cenário
 
-O Bellows College é uma instituição educacional com vários edifícios no campus. Atualmente as visitas ao campus são anotadas em papel. O registro das informações não é consistente e não existe nenhum recurso para coletar e analisar os dados das visitas em todo o campus.
+O Bellows College é uma organização educacional que possui um campus com vários edifícios. Atualmente, as visitas ao campus são registradas em diários de papel. As informações não são coletadas de forma consistente e não há meios de analisar os dados sobre as visitas em todo o campus.
 
 A administração do campus quer fornecer aos visitantes informações sobre os prédios do campus. Os visitantes poderão ver a lista de prédios em um site, que será construído usando um portal do Power Apps.
 
@@ -33,14 +31,14 @@ Seguiremos o esquema abaixo para projetar o portal do Power Apps:
 
 ## Pré-requisitos
 
-* Conclusão do **Módulo 0 Laboratório 0 – Validar ambiente do laboratório**
-* Conclusão do **Módulo 2 Laboratório 1 – Introdução ao Microsoft Dataverse**
+* Conclusão do **Módulo 0 Laboratório 0 - Validação do ambiente de laboratório**
+* Conclusão do **Módulo 2 Laboratório 1 - Introdução ao Microsoft Dataverse**
 
-## Questões importantes antes de prosseguir
+## Considerações antes de começar
 
 * Os aplicativos de portais do Power Apps são sempre iniciados a partir de um modelo em vez de um aplicativo em branco. O portal já deve ter sido criado no Módulo 0 Laboratório 0. Quando você provisionar um portal, ele já tem páginas, menus e um tema padrão. 
 
-# Exercício 1: criar uma página da Web do portal
+# Exercício \#1: criar uma página da Web do portal
 
 **Objetivo:** neste exercício você vai criar uma nova página da Web que exibe alguns conteúdos estáticos, bem como uma lista de prédios do Dataverse.
 
@@ -104,7 +102,7 @@ Seguiremos o esquema abaixo para projetar o portal do Power Apps:
 
     -   Na nova área de texto, insira o seguinte texto:
           ```
-> Abaixo está o diretório de prédios.
+          The following is the building directory.
           ```
     -   Selecione a caixa de texto acima daquela que você acabou de editar e clique em **Excluir** na barra de comandos para remover o texto padrão.
 
@@ -168,7 +166,7 @@ Seguiremos o esquema abaixo para projetar o portal do Power Apps:
 
     > A lista de prédios do seu banco de dados Dataverse é exibida na página da Web.
 
-# Exercício 2: mudar o tema do portal
+# Exercício \#2: mudar o tema do portal
 
 **Objetivo:** Neste exercício você vai criar um novo tema para alterar o esquema de cores do portal. 
 

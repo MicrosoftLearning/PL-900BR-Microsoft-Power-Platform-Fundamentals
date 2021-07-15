@@ -8,37 +8,35 @@ lab:
 ## Laboratório: Saiba como construir uma solução automatizada
 
 ### Aviso importante (Em vigor a partir de novembro de 2020):
-O Common Data Service foi renomeado para Microsoft Dataverse. Algumas terminologias no Microsoft Dataverse foram atualizadas. Por exemplo, entidade agora é tabela. Os campos e registros nos bancos de dados do Dataverse agora são chamados de colunas e linhas.
-
-Alguns aplicativos estão atualizando a experiência do usuário, portanto algumas referências à terminologia do Microsoft Dataverse, como entidade (agora **tabela**), campo (agora **coluna**) e registro (agora **linha**) podem estar desatualizadas. Lembre-se disso ao participar do laboratório. Esperamos atualizar todo o conteúdo em breve. 
+O Common Data Service foi renomeado para Microsoft Dataverse. Algumas terminologias no Microsoft Dataverse foram atualizadas. Por exemplo, a entidade (agora, **tabela**), o campo (agora, **coluna**) e o registro (agora **linha**) podem estar desatualizados. Lembre-se disso ao participar do laboratório. Esperamos atualizar todo o conteúdo em breve.
 
 Para obter mais informações e uma lista completa de termos afetados, visite [O que é o Microsoft Dataverse?](https://docs.microsoft.com/pt-br/powerapps/maker/common-data-service/data-platform-intro#terminology-updates)
 
 ## Cenário
 
-Bellows College é uma organização educacional com um campus com diversos edifícios. Atualmente, os visitantes do campus são registrados em um diário de papel. As informações não são coletadas de maneira coerente e não há como coletar e analisar os dados dos visitantes em todo o campus. 
+O Bellows College é uma organização educacional que possui um campus com vários edifícios. Atualmente as visitas ao campus são anotadas em papel. As informações não são coletadas de forma consistente e não há meios de analisar os dados sobre as visitas em todo o campus. 
 
-A administração do campus pretende modernizar o sistema de registro de visitantes. Hoje em dia, o acesso aos edifícios é controlado pela equipe de segurança e todas as visitas precisam ser pré-registradas e lançadas pelos anfitriões.
+A administração do campus quer modernizar o sistema de registro de visitantes, com controle do acesso aos edifícios pelo pessoal de segurança, além de exigência de notificação prévia e registro de todas as visitas pelos anfitriões.
 
-Ao longo deste curso, você criará aplicativos e usará a automação para que as equipes de administração e segurança do Bellows College possam gerenciar e controlar o acesso aos edifícios do campus. 
+Ao longo deste curso, você vai criar aplicativos e fazer automações para permitir que a administração e a equipe de segurança do Bellows College gerenciem e controlem o acesso aos edifícios no campus. 
 
 Neste laboratório, você criará fluxos do Power Automate para automatizar várias partes do gerenciamento do campus. 
 
-# Etapas gerais do laboratório
+# Macroetapas do laboratório
 
-Para concluir o projeto é imprescindível implementar os seguintes requisitos:
+Os pré-requisitos seguintes foram identificados para que o projeto seja concluído:
 
 * O código exclusivo atribuído a cada visitante deve ser disponibilizado antes da visita.
 * A equipe de segurança precisa receber notificações de visitantes que ultrapassam os horários programados.
 
 ## Pré-requisitos
 
-* Conclusão do **Módulo 0 Laboratório 0 - Validar ambiente do laboratório**
+* Conclusão do **Módulo 0 Laboratório 0 - Validação do ambiente de laboratório**
 * Conclusão do **Módulo 2 Laboratório 1 - Introdução ao Microsoft Dataverse**
 * Aplicativo Campus Staff criado no **Módulo 3 Laboratório 2 – Como construir um aplicativo de tela, parte 2** (teste)
 * Contato John Doe criado com um endereço de email pessoal no **Módulo 3 Laboratório 4 - Como construir um aplicativo baseado em modelo** (teste)
 
-## Considere estes itens antes de começar
+## Considerações antes de começar
 
 -   Qual o mecanismo de distribuição mais adequado para os códigos de visitantes?
 -   Como medir o tempo de permanência excedente e aplicar políticas rígidas?
@@ -47,7 +45,7 @@ Para concluir o projeto é imprescindível implementar os seguintes requisitos:
 
 **Objetivo:** Neste exercício será criado um fluxo no Power Automate que implementa o requisito. O visitante deverá receber um email com o código exclusivo atribuído à visita.
 
-## Tarefa \#1: Criar fluxo
+## Tarefa 1: Criar fluxo
 
 1.  Abra a solução Gerenciamento de Campus.
 
@@ -61,11 +59,11 @@ Para concluir o projeto é imprescindível implementar os seguintes requisitos:
 
 2.  Clique em **Novo** e selecione **Fluxo na nuvem**. Isso abrirá o editor de fluxo do Power Automate em uma nova janela.
 
-3. Pesquise por *Atual* e selecione o conector **Common Data Service (Ambiente atual)**.
+3. Selecione o **Microsoft Dataverse**.
 
-4. Selecione o gatilho **Quando um registro é criado, atualizado ou excluído**.
+4. Selecione o gatilho **Quando uma linha é criada, atualizada ou excluída**.
 
-   * Selecione **Criar** em **Condição do gatilho**
+   * Selecione **Criar** para **Alterar o tipo**
    
    * Selecione **Visitas** em **Nome da tabela**
    
@@ -73,9 +71,9 @@ Para concluir o projeto é imprescindível implementar os seguintes requisitos:
    
    * Na etapa de ativação, clique nas reticências (**...**) e clique em **Renomear**. Renomeie esse gatilho **"Quando uma visita é criada"**. Essas ações são importantes para que todos com permissão para editar o fluxo entendam o propósito da etapa sem precisar de maiores detalhes.
 
-5.  Clique em **Nova etapa**. Esta etapa é necessária para recuperar as informações dos visitantes, inclusive o endereço de email.
+5. Selecione **Nova etapa**. Esta etapa é necessária para recuperar as informações dos visitantes, inclusive o endereço de email.
 
-6. Pesquise por *Atual* e selecione o conector **Common Data Service (Ambiente atual)**.
+6. Selecione **Microsoft Dataverse**.
 
 7. Selecione **Obter uma linha por ID**. 
 
@@ -100,27 +98,27 @@ Para concluir o projeto é imprescindível implementar os seguintes requisitos:
         > O conteúdo dinâmico precisa ser inserido onde os campos são nomeados entre colchetes. É recomendado copiar e colar todo o texto primeiro e, em seguida, adicionar o conteúdo dinâmico nos locais corretos.
    
         ```
-        Prezado(a) {First Name},
+        Dear {First Name},
 
-        Você tem uma visita agendada ao Bellows Campus de {Scheduled Start} até {Scheduled End}.
+        You are currently scheduled to visit Bellows Campus from {Scheduled Start} until {Scheduled End}.
 
-        Seu código de segurança é {Code}. Não o compartilhe. Você deverá informar esse código durante sua visita.
+        Your security code is {Code}, please do not share it. You will be required to produce this code during your visit.
 
-        Atenciosamente,
+        Best regards,
 
-        Administração do Campus
+        Campus Administration
         Bellows College
         ```
    
-10.  Selecione o nome do fluxo **Sem Título** na parte superior e renomeie como `Notificação de visita`
+10.  Selecione o nome do fluxo **Sem Título** na parte superior e renomeie como `Visit notification`
 
 11. Clique em **Salvar**
 
     Deixe esta guia de fluxo aberta para a próxima tarefa. Seu fluxo deve ser parecido com o seguinte:
 
-![Fluxo de notificação de visitantes do Power Automate](media/4-power-automate-notification.png)
+![imagem](https://user-images.githubusercontent.com/78555251/118340724-ccb13300-b4d9-11eb-96c2-c7b005bb9ac0.png)
 
-## Tarefa \#2: Validar e testar o fluxo
+## Tarefa 2: Validar e testar o fluxo
 
 1.  Abra uma nova guia no navegador e acesse <https://make.powerapps.com>
 
@@ -152,17 +150,17 @@ Para concluir o projeto é imprescindível implementar os seguintes requisitos:
 
 15.  Fechar esta janela.
 
-# Exercício #2: Criar fluxo de Varredura de segurança
+# Exercício 2: Criar fluxo de Varredura de segurança
 
 **Objetivo:** Neste exercício será criado um fluxo no Power Automate que implementa o requisito. Uma varredura de segurança deve ser realizada a cada 15 minutos e a equipe de segurança deve ser notificada se algum dos visitantes ultrapassar o horário programado.
 
-## Tarefa #1: Criar um fluxo para recuperar registros
+## Tarefa 1: Criar um fluxo para recuperar registros
 
 1. Abra a solução Gerenciamento de Campus.
 
    -   Faça login em <https://make.powerapps.com>
 
-   -   Selecione **Ambiente.**
+   -   Selecione o **Ambiente.**
 
    -   Selecione **Soluções**.
 
@@ -174,7 +172,7 @@ Para concluir o projeto é imprescindível implementar os seguintes requisitos:
 
 4. Defina **Intervalo** como **15 minutos**
 
-5. Clique em **Nova etapa**. Pesquise por *Atual* e selecione o conector **Common Data Service (Ambiente atual)**. Selecione a ação **Listar linhas**.
+5. Clique em **Nova etapa**. Pesquise por *Atual* e selecione o conector **Microsoft Dataverse**. Selecione a ação **Listar linhas**.
 
    * Insira **Visitas** como **Nome da tabela**
    
@@ -202,61 +200,61 @@ Para concluir o projeto é imprescindível implementar os seguintes requisitos:
 
     * Clique em **Adicionar uma ação** dentro de Aplicar a cada sequência.
     
-    * Pesquise por *Atual* e selecione o conector **Common Data Service (Ambiente atual)**. 
+    * Selecione **Microsoft Dataverse**. 
     
     * Selecione **Obter uma linha por ID**.
     
-    * Selecione **Edifícios** como **Nome da entidade**
+    * Selecione **Edifícios** como **Nome da tabela**
     
-    * Selecione **Edifício (Valor)** como **ID do Item** no conteúdo Dinâmico
+    * Selecione **Edifício (Valor)** como **ID da linha** no conteúdo Dinâmico
     
-    * Clique em **...** ao lado de **Obter um registro**, selecione **Renomear**. Digite **Criar edifício** como nome da etapa
+    * Clique em **[...]** ao lado de **Obter um registro**, selecione **Renomear**. Digite **Criar edifício** como nome da etapa
     
 9.  Recuperar dados de Visitante do registro relacionado
 
     * Clique em **Adicionar uma ação** dentro de Aplicar a cada sequência.
     
-    * Pesquise por *Atual* e selecione o conector **Common Data Service (Ambiente atual)**.
+    * Selecione **Microsoft Dataverse**.
     
     * Selecione **Obter uma linha por ID**.
     
-    * Selecione **Contatos** em **Nome da entidade**
+    * Selecione **Contatos** em **Nome da tabela**
     
-    * Selecione **Visitante (Valor)** em **ID do item** no conteúdo dinâmico
+    * Selecione **Visitante (Valor)** como **ID da linha** no conteúdo dinâmico
     
-    * Clique em **...** ao lado de **Obter um registro**, selecione **Renomear**. Digite **Criar visitante** como nome da etapa
+    * Clique em **[...]** ao lado de **Obter um registro**, selecione **Renomear**. Digite **Criar visitante** como nome da etapa
     
-11.  Enviar notificação por email
+10.  Enviar notificação por email
 
      * Clique em **Adicionar uma ação** dentro de Aplicar a cada sequência. Adicione a ação **Enviar uma notificação por email** pela conexão **Email**.
 
-12.  Insira seu endereço de email em **Para**
+11.  Insira seu endereço de email em **Para**
 
-13.  Insira o seguinte texto no campo **Assunto**. **Nome Completo** é um conteúdo dinâmico da etapa **Criar visitante**.
+12.  Insira o seguinte texto no campo **Assunto**. **Nome Completo** é um conteúdo dinâmico da etapa **Criar visitante**.
 
    ```
-   O tempo de visita de {Full Name} foi excedido
+   {Full Name} overstayed their welcome
    ```
    
-14.  Insira o seguinte texto no campo **Corpo da mensagem**. **Nome** é um conteúdo dinâmico da etapa **Criar edifício**.
+13.  Insira o seguinte texto no campo **Corpo da mensagem**. **Nome** é um conteúdo dinâmico da etapa **Criar edifício**.
 
    ```
-   O tempo de permanência foi excedido no edifício {Name}.
+   There is an overstay in building {Name}.
          
-   Atenciosamente,
+   Best,
          
-   Segurança do Campus
+   Campus Security
    ```
 
-17.  Selecione o nome do fluxo **Sem título** no canto superior esquerdo e renomeie-o para **Varredura de segurança**
+14.  Selecione o nome do fluxo **Sem título** no canto superior esquerdo e renomeie-o para **Varredura de segurança**
 
-18.  Clique em **Salvar**
+15.  Clique em **Salvar**
 
     Seu fluxo deve ser semelhante ao seguinte:
 
 ![Fluxo programado de varredura de segurança - parte 1](media/4-power-automate-security-sweep-flow.png)
 
-## Tarefa #2: Validar e testar o fluxo
+## Tarefa 2: Validar e testar o fluxo
 
 Seu fluxo começará a enviar mensagens (para o email que você especificou ao criar o contato John Doe anteriormente) se houver visitas que correspondam aos requisitos definidos no fluxo.
 

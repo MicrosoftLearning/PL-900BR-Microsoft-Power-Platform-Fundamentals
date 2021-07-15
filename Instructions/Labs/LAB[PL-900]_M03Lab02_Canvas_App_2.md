@@ -8,23 +8,21 @@ lab:
 ## Laboratório 2: Como criar um aplicativo de tela, parte 2
 
 ### Aviso importante (Em vigor a partir de novembro de 2020):
-O Common Data Service foi renomeado para Microsoft Dataverse. Algumas terminologias no Microsoft Dataverse foram atualizadas. Por exemplo, entidade agora é tabela. Os campos e registros nos bancos de dados do Dataverse agora são chamados de colunas e linhas.
+O Common Data Service foi renomeado para Microsoft Dataverse. Algumas terminologias no Microsoft Dataverse foram atualizadas. Por exemplo, a entidade (agora, **tabela**), o campo (agora, **coluna**) e o registro (agora **linha**) podem estar desatualizados. Lembre-se disso ao participar do laboratório. Esperamos atualizar todo o conteúdo em breve.
 
-Durante o processo de atualização da experiência do usuário nos aplicativos, algumas referências à terminologia da Microsoft Dataverse podem estar desatualizadas, como entidade (agora **tabela**), campo (agora **coluna**) e registro (agora **linha**). Lembre-se disso ao trabalhar nos laboratórios. Esperamos ter nosso conteúdo totalmente atualizado em breve.  
-
-Para obter mais informações e uma lista completa dos termos alterados, acesse [O que é Microsoft Dataverse?](https://docs.microsoft.com/pt-br/powerapps/maker/common-data-service/data-platform-intro#terminology-updates)
+Para obter mais informações e uma lista completa de termos afetados, visite [O que é o Microsoft Dataverse?](https://docs.microsoft.com/pt-br/powerapps/maker/common-data-service/data-platform-intro#terminology-updates)
 
 # Cenário
 
-O Bellows College é uma organização educacional com vários edifícios no campus. Atualmente, as visitas ao campus são registradas em papel. As informações não são capturadas de forma consistente e não há meios de coletar e analisar os dados das visitas de todo o campus. 
+O Bellows College é uma organização educacional que possui um campus com vários edifícios. Atualmente, as visitas ao campus são registradas em diários de papel. As informações não são coletadas de forma consistente e não há meios de analisar os dados sobre as visitas em todo o campus. 
 
-A administração do campus gostaria de modernizar seu sistema de registro de visitantes, onde o acesso aos edifícios será controlado pela equipe de segurança e todas as visitas serão pré-agendadas e registradas por seus anfitriões.
+A administração do campus quer modernizar o sistema de registro de visitantes, com controle do acesso aos edifícios pelo pessoal de segurança, além de exigência de notificação prévia e registro de todas as visitas pelos anfitriões.
 
-Ao longo deste curso, você criará aplicativos e realizará automação para permitir que a administração e a equipe de segurança do Bellows College gerenciem e controlem o acesso aos edifícios do campus. 
+Ao longo deste curso, você vai criar aplicativos e fazer automações para permitir que a administração e a equipe de segurança do Bellows College gerenciem e controlem o acesso aos edifícios no campus. 
 
 Na parte 2 deste laboratório, você desenvolverá e criará um aplicativo de tela no Power Apps que a equipe de segurança usará nas entradas do edifício para confirmar e registrar os visitantes com rapidez.
 
-# Etapas avançadas do laboratório
+# Macroetapas do laboratório
 
 Siga a estrutura de tópicos abaixo para desenvolver o aplicativo de tela:
 
@@ -37,10 +35,10 @@ Siga a estrutura de tópicos abaixo para desenvolver o aplicativo de tela:
 
 ## Pré-requisitos
 
-* Conclusão do **Módulo 0 Laboratório 0 - Validar ambiente do laboratório**
+* Conclusão do **Módulo 0 Laboratório 0 - Validação do ambiente de laboratório**
 * Conclusão do **Módulo 2 Laboratório 1 - Introdução ao Microsoft Dataverse**
 
-## Considerações iniciais
+## Considerações antes de começar
 
 -   A quais informações um agente de segurança precisa ter rápido acesso?
 -   O que deve acontecer caso o código do visitante seja inválido?
@@ -50,7 +48,7 @@ Siga a estrutura de tópicos abaixo para desenvolver o aplicativo de tela:
 
 **Objetivo:** Neste exercício, você criará um Aplicativo de tela.
 
-## Tarefa \#1: Criar aplicativo de tela
+## Tarefa 1: Criar aplicativo de tela
 
 1.  Abra a solução Gerenciamento de Campus.
 
@@ -85,13 +83,13 @@ Siga a estrutura de tópicos abaixo para desenvolver o aplicativo de tela:
     
     -   Clique em **+ Adicionar dados**
 
-    -   Clique em **Visualizar todas as entidades** (ou tabelas)
+    -   Clique em **Ver todas as tabelas**
     
     -   Selecione **Visitas** e aguarde a exibição da tabela Visita na guia Dados.
     
 4.  Para preservar o trabalho em andamento, clique em **Arquivo** e depois clique em **Salvar**. Use a seta voltar para retornar ao aplicativo.
 
-## Tarefa \#2: Exibir informações do Visitante
+## Tarefa 2: Exibir informações do Visitante
 
 1.  Adicionar caixa de pesquisa
 
@@ -109,7 +107,7 @@ Siga a estrutura de tópicos abaixo para desenvolver o aplicativo de tela:
     
     -   Selecione a propriedade **Dica de Texto** e digite `"Enter visitor code"` como o valor (incluindo as aspas)
     
-    -   Clique em **...** ao lado do nome do controle na visualização em árvore (TextInput1), selecione **Renomear** e altere o nome para `textCode`
+    -   Clique em **[...]** ao lado do nome do controle na visualização em árvore (TextInput1), selecione **Renomear** e altere o nome para `textCode`
     
 3.  Adicionar um modo de exibição Formulário
 
@@ -165,7 +163,7 @@ Siga a estrutura de tópicos abaixo para desenvolver o aplicativo de tela:
    
 10.  Pressione **ESC** para sair do aplicativo em execução.
 
-## Tarefa \#3: Adicionar Botões de Check-In e Check-Out
+## Tarefa 3: Adicionar Botões de Check-In e Check-Out
 
 Nesta tarefa, criaremos botões para o usuário fazer check-in e check-out das visitas. 
 
@@ -187,7 +185,7 @@ Nesta tarefa, criaremos botões para o usuário fazer check-in e check-out das v
    
    * No painel de propriedades, altere a propriedade **Texto** do botão para "`Check In`" (você pode digitar dentro das aspas existentes)
    
-   * Clique em **...** próximo ao nome do botão na visualização em árvore (Button1), selecione **Renomear** e altere o nome para `CheckInButton`
+   * Clique em **[...]** próximo ao nome do botão na visualização em árvore (Button1), selecione **Renomear** e altere o nome para `CheckInButton`
 
 3. Adicionar Botão de Check-Out   
 
@@ -199,7 +197,7 @@ Nesta tarefa, criaremos botões para o usuário fazer check-in e check-out das v
    
    * Posicione os botões abaixo da caixa de pesquisa, com **Check In** acima de **Check Out** 
    
-## Tarefa \#4: Ativar e desativar botões de acordo com os dados da visita
+## Tarefa 4: Ativar e desativar botões de acordo com os dados da visita
 
 Depois que os usuários pesquisarem o código da visita, use o botão Check-in para fazer a verificação de entrada dessa visita. Habilitar o botão **Check In** quando o registro da visita for localizado (não estiver em branco), o status do registro estiver ativo e a visita ainda não tiver começado, ou seja, quando o valor do início real estiver em branco.
 
@@ -249,7 +247,7 @@ Habilitar o botão **Check Out** quando o registro da visita for localizado (nã
 
 9. Pressione **ESC** para sair do aplicativo em execução.
 
-## Tarefa \#5: Concluir o Processo de Entrada (Check-in) e Saída (Check-out)
+## Tarefa 5: Concluir o Processo de Entrada (Check-in) e Saída (Check-out)
 
 Para realizar o processo de check-in e check-out, é necessário atualizar os dados de visita do Dataverse da seguinte forma:
 
@@ -320,7 +318,7 @@ Para realizar o processo de check-in e check-out, é necessário atualizar os da
 
 10. Pressione **ESC** para sair do aplicativo em execução.
 
-## Tarefa \#6: Adicionar indicadores visuais
+## Tarefa 6: Adicionar indicadores visuais
 
 A usabilidade de um aplicativo móvel melhora bastante quando indicadores visuais são fornecidos. Nesta tarefa, adicionaremos um ícone indicando se um visitante pode fazer check-in ou check-out.
 
@@ -355,7 +353,7 @@ O aplicativo em execução deve ser parecido com o seguinte:
 
 8. Pressione **ESC** para sair do aplicativo em execução.
 
-## Tarefa #7: Publicar o aplicativo
+## Tarefa 7: Publicar o aplicativo
 
 1. O aplicativo Segurança do Campus ainda deve estar aberto no navegador. Caso não esteja, selecione o aplicativo **Segurança do Campus** e clique em **Editar**.
 

@@ -8,16 +8,14 @@ lab:
 
 ## Laboratório: Como criar um aplicativo de tela, Parte 1
 
-### Aviso importante (vigente a partir de novembro de 2020):
-O nome do Common Data Service passou a ser Microsoft Dataverse. Algumas terminologias no Microsoft Dataverse foram atualizadas. Por exemplo: "entidade" passou a ser “tabela”. Os campos e registros nos bancos de dados do Dataverse agora são chamados de colunas e linhas.
+### Aviso importante (Em vigor a partir de novembro de 2020):
+O Common Data Service foi renomeado para Microsoft Dataverse. Algumas terminologias no Microsoft Dataverse foram atualizadas. Por exemplo, a entidade (agora, **tabela**), o campo (agora, **coluna**) e o registro (agora **linha**) podem estar desatualizados. Lembre-se disso ao participar do laboratório. Esperamos atualizar todo o conteúdo em breve.
 
-A experiência do usuário nos aplicativos ainda está em processo de atualização, mas algumas referências à terminologia do Microsoft Dataverse podem estar desatualizadas, como entidade (agora **tabela**), campo (agora **coluna**) e registro (agora **linha**). Lembre-se disso ao trabalhar nos laboratórios.
-
-Para saber mais e ver a lista completa dos termos alterados, veja [O que é o Microsoft Dataverse?](https://docs.microsoft.com/pt-br/powerapps/maker/common-data-service/data-platform-intro#terminology-updates)
+Para obter mais informações e uma lista completa de termos afetados, visite [O que é o Microsoft Dataverse?](https://docs.microsoft.com/pt-br/powerapps/maker/common-data-service/data-platform-intro#terminology-updates)
 
 # Cenário
 
-O Bellows College é uma instituição educacional com vários edifícios no campus. Atualmente as visitas ao campus são anotadas em papel. O registro das informações não é consistente e não existe nenhum recurso para coletar e analisar os dados das visitas em todo o campus. 
+O Bellows College é uma organização educacional que possui um campus com vários edifícios. Atualmente, as visitas ao campus são registradas em diários de papel. As informações não são coletadas de forma consistente e não há meios de analisar os dados sobre as visitas em todo o campus. 
 
 A administração do campus quer modernizar o sistema de registro de visitantes, com controle do acesso aos edifícios pelo pessoal de segurança, além de exigência de notificação prévia e registro de todas as visitas pelos anfitriões.
 
@@ -37,43 +35,39 @@ Seguiremos o esquema abaixo para projetar o aplicativo de tela:
 
 ## Pré-requisitos
 
-* Conclusão do **Módulo 0 Laboratório 0 – Validar ambiente do laboratório**
-* Conclusão do **Módulo 2 Laboratório 1 – Introdução ao Microsoft Dataverse**
+* Conclusão do **Módulo 0 Laboratório 0 - Validação do ambiente de laboratório**
+* Conclusão do **Módulo 2 Laboratório 1 - Introdução ao Microsoft Dataverse**
 
-## Questões importantes antes de prosseguir
+## Considerações antes de começar
 
 -   Qual é o fator forma predominante para o público-alvo?
 -   Estimar o número de registros que serão armazenados no sistema 
 -   Como limitar os registros selecionados para melhorar o desempenho do aplicativo e a adoção do usuário?
 
-# Exercício 1: criar o aplicativo de tela dos funcionários
+# Exercício \#1: criar o aplicativo de tela dos funcionários
 
 **Objetivo:** Neste exercício você vai criar um aplicativo de tela a partir de um modelo e, em seguida, vai modificá-lo para incluir os dados necessários.
 
-## Tarefa 1: criar o aplicativo de tela
+## Tarefa 1: Criar aplicativo de tela
 
 Nesta tarefa você vai criar um aplicativo de tela usando o modelo de layout do telefone com base no Microsoft Dataverse. Ao usar Visitas como uma tabela selecionada do Dataverse, o modelo gera um aplicativo Galeria – Exibir – Editar para gerenciar visitas ao campus.
 
 1.  Exiba os aplicativos no seu ambiente.
 
-    -   Entre em <https://make.powerapps.com>.
+    -   Faça login em <https://make.powerapps.com>
 
     -   Selecione o **ambiente** no canto superior direito, se ele ainda não estiver definido
         para o seu ambiente de Prática.
 
     -   Selecione **Aplicativos**.
 
-2.  Crie um novo aplicativo de tela.
+2.  Criar um novo aplicativo de tela
 
     -   Clique em **Novo aplicativo** e selecione **Tela**.
 
-    -   Selecione **Layout do telefone** em **Common Data Service**.
+    -   Selecione **Layout do telefone** em **Microsoft Dataverse (herdado)**.
 
-3.  Selecione **Criar** na conexão do **Common Data Service**.
-
-4.  Selecione a tabela **Visitas**.
-
-5.  Clique em **Conectar**.
+4.  Selecione a tabela **Visitas**. Clique em **Conectar**.
 
 6.  A janela **Boas-vindas ao Power Apps Studio** pode ser exibida. Clique em **Ignorar**.
 
@@ -105,13 +99,13 @@ Nesta tarefa você configurará o formulário Detalhes para exibir informações
     
     * Início real
     
-    * Prédio 
+    * Edifício 
     
     * Código
     
-    * Fim programado
+    * Fim agendado
     
-    * Início programado
+    * Início agendado
     
     * Visitante
     
@@ -125,7 +119,7 @@ Nesta tarefa você configurará o formulário Detalhes para exibir informações
 
 10.  Feche o painel **Campos**.
  
-11.  Para salvar o trabalho em andamento, clique em **Arquivo** e depois em **Salvar**. Use a seta de voltar para retornar ao aplicativo.
+11.  Para preservar o trabalho em andamento, clique em **Arquivo** e depois clique em **Salvar**. Use a seta voltar para retornar ao aplicativo.
 
 ## Tarefa 3: configurar o formulário Editar visitas
 
@@ -143,11 +137,11 @@ Nesta tarefa você configurará o formulário para editar linhas com as informa�
 
 6.  Selecione os seguintes campos:
 
-    * Prédio 
+    * Edifício 
     
-    * Fim programado
+    * Fim agendado
     
-    * Início programado
+    * Início agendado
     
     * Visitante
     
@@ -160,7 +154,7 @@ Nesta tarefa você configurará o formulário para editar linhas com as informa�
 
 9.  Feche o painel **Campos**.
 
-10.  Para salvar o trabalho em andamento, clique em **Arquivo** e depois em **Salvar**. Use a seta de voltar para retornar ao aplicativo.
+10.  Para preservar o trabalho em andamento, clique em **Arquivo** e depois clique em **Salvar**. Use a seta voltar para retornar ao aplicativo.
 
 Sua tela deve ter uma aparência semelhante à seguinte.
 
@@ -180,7 +174,7 @@ Nesta tarefa você configurará a galeria pré-gerada para exibir o título, a d
 
 5.  Na visualização do aplicativo, selecione o primeiro campo ‘Data e Hora’ na galeria.
 
-6.  Na barra da fórmula, na parte superior, troque **ThisItem.'Created On'** por `ThisItem.'Scheduled Start'`.
+6.  Na barra da fórmula, na parte superior, troque **hisItem.'Created On'** por `ThisItem.'Scheduled Start'`.
 
 7.  Selecione novamente o campo.
 
@@ -190,7 +184,7 @@ Nesta tarefa você configurará a galeria pré-gerada para exibir o título, a d
 
 10.  Na barra da fórmula, na parte superior, troque **ThisItem.'Scheduled Start'** por `ThisItem.'Scheduled End'`.
 
-11.  Para salvar o trabalho em andamento, clique em **Arquivo** e depois em **Salvar**. Use a seta de voltar para retornar ao aplicativo.
+11.  Para preservar o trabalho em andamento, clique em **Arquivo** e depois clique em **Salvar**. Use a seta voltar para retornar ao aplicativo.
 
 ## Tarefa 5: adicionar um filtro de data
 
@@ -229,7 +223,7 @@ Como o número de visitas cresce continuamente, os usuários precisam de um recu
    )
    ```
    
-10. Para salvar o trabalho em andamento, clique em **Arquivo** e depois em **Salvar**. Use a seta de voltar para retornar ao aplicativo.
+10. Para preservar o trabalho em andamento, clique em **Arquivo** e depois clique em **Salvar**. Use a seta voltar para retornar ao aplicativo.
 
 Sua tela deve ter uma aparência semelhante à seguinte.
 
@@ -241,7 +235,7 @@ Neste exercício, você testará o aplicativo e o adicionará o aplicativo à su
 
 ## Tarefa 1: testar o aplicativo
 
-1.  Inicie o aplicativo.
+1.  Inicie o aplicativo
 
     -   Selecione **BrowseScreen1** e pressione Função **F5**, ou clique no ícone **Executar** no canto superior direito para exibir o aplicativo.
     
@@ -277,13 +271,13 @@ Neste exercício, você testará o aplicativo e o adicionará o aplicativo à su
 
 1. Abra a solução Gerenciamento do campus.
 
-   * Entre em <https://make.powerapps.com>.
+   * Faça login em <https://make.powerapps.com>
    
-   * Se o ambiente exibido no canto superior direito não for o seu ambiente de prática, selecione seu **Ambiente**. 
+   * Se o Ambiente exibido no canto superior direito não for o seu ambiente de Prática, selecione o **Ambiente**. 
    
    * Selecione **Soluções**.
    
-   * Clique para abrir a solução **Gerenciamento do campus**.
+   * Clique para abrir a solução **Gerenciamento de Campus**.
    
 2. Selecione **Adicionar existente**, depois clique em **Aplicativo** e em **Aplicativo de tela**.
 

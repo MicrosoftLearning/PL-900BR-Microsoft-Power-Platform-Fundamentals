@@ -9,23 +9,21 @@ Módulo 0: Introdução ao curso
 
 ## Laboratório: Validar ambiente de laboratório
 
-### Aviso importante (em vigor em novembro de 2020):
-O Common Data Service foi renomeado como Microsoft Dataverse. Alguns termos no Microsoft Dataverse foram atualizados. Por exemplo, o termo entidade agora é tabela. Os campos e registros nos bancos de dados do Dataverse agora são chamados de colunas e linhas.
+### Aviso importante (Em vigor a partir de novembro de 2020):
+O Common Data Service foi renomeado para Microsoft Dataverse. Algumas terminologias no Microsoft Dataverse foram atualizadas. Por exemplo, a entidade (agora, **tabela**), o campo (agora, **coluna**) e o registro (agora **linha**) podem estar desatualizados. Lembre-se disso ao participar do laboratório. Esperamos atualizar todo o conteúdo em breve. 
 
-Embora os aplicativos estejam em processo de atualização da experiência do usuário, algumas referências à terminologia do Microsoft Dataverse, como entidade (agora **tabela**), campo (agora **coluna**) e registro (agora **linha**), podem estar desatualizadas. Lembre-se disso ao trabalhar nos laboratórios. Esperamos atualizar todo o conteúdo em breve. 
-
-Para obter mais informações e uma lista completa dos termos afetados, visite [O que é o Microsoft Dataverse?](https://docs.microsoft.com/pt-br/powerapps/maker/common-data-service/data-platform-intro#terminology-updates)
+Para obter mais informações e uma lista completa de termos afetados, visite [O que é o Microsoft Dataverse?](https://docs.microsoft.com/pt-br/powerapps/maker/common-data-service/data-platform-intro#terminology-updates)
 
 Cenário
 --------
 
-O Bellows College é uma organização educacional com vários edifícios no campus. Atualmente, os visitantes do campus são registrados em um diário de papel. As informações não são capturadas de forma consistente e não há meios de coletar e analisar dados sobre as visitas em todo o campus.
+O Bellows College é uma organização educacional que possui um campus com vários edifícios. Atualmente as visitas ao campus são anotadas em papel. As informações não são coletadas de forma consistente e não há meios de analisar os dados sobre as visitas em todo o campus.
 
-A administração do campus gostaria de modernizar seu sistema de registro de visitantes, onde o acesso aos edifícios fosse controlado pelo pessoal da segurança e todas as visitas fossem pré-registradas e gravadas por seus anfitriões.
+A administração do campus quer modernizar o sistema de registro de visitantes, com controle do acesso aos edifícios pelo pessoal de segurança, além de exigência de notificação prévia e registro de todas as visitas pelos anfitriões.
 
-Ao longo deste curso, você criará aplicativos e realizará a automação para permitir que a administração e o pessoal da segurança do Bellows College gerenciem e controlem o acesso aos edifícios do campus.
+Ao longo deste curso, você vai criar aplicativos e fazer automações para permitir que a administração e a equipe de segurança do Bellows College gerenciem e controlem o acesso aos edifícios no campus.
 
-Neste laboratório do Módulo 0, você irá adquirir um locatário de teste da Power Platform e acessar o centro de administração da Power Platform. No centro de administração, você criará o seu ambiente de **Prática** no qual fará a maior parte do trabalho do laboratório.
+Neste laboratório do Módulo 0, você irá adquirir um locatário de teste da Power Platform e acessar o centro de administração do Power Platform. No centro de administração, você criará o seu ambiente de **Prática** no qual fará a maior parte do trabalho do laboratório.
 
 ## Exercício 1 – Configuração
 
@@ -63,7 +61,7 @@ Neste laboratório do Módulo 0, você irá adquirir um locatário de teste da P
 
     > O ambiente pode levar alguns minutos para ser provisionado. Se necessário, atualize a página.
 
-# Exercício 2: Provisionar um portal do Power Apps
+# Exercício \#2: Provisionar um portal do Power Apps
 
 **Objetivo:** O provisionamento de um portal do Power Apps pode levar algum tempo. Neste exercício, você criará o portal do Power Apps no seu ambiente para que o processo de provisionamento possa ser iniciado. Você usará este portal em um laboratório posterior.
 
@@ -79,7 +77,7 @@ Neste laboratório do Módulo 0, você irá adquirir um locatário de teste da P
 
 4.  Forneça novos detalhes para o portal
 
-    -   Digite **Visitantes do Bellows College** como o **Nome** do portal
+    -   Digite **```Bellows College Visitors```** como o **Nome** do portal
 
     -   Forneça um URL exclusivo; **algumacoisa**.powerappsportals.com (se o nome já estiver sendo usado, escolha outro)
 
