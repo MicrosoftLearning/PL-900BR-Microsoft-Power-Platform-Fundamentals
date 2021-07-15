@@ -1,4 +1,4 @@
-﻿---
+---
 lab:
     title: 'Laboratório 4: Criar um aplicativo baseado em modelo'
     module: 'Módulo 3: Introdução ao Power Apps'
