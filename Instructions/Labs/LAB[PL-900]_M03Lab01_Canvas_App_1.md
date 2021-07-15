@@ -1,4 +1,4 @@
-﻿---
+---
 lab:
     title: 'Laboratório 2: Como criar um aplicativo de tela, Parte 1'
     module: 'Módulo 3: Introdução ao Power Apps'
