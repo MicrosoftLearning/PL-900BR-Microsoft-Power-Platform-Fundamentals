@@ -6,7 +6,7 @@ lab:
 
 # Módulo 3: Introdução ao Power Apps
 
-## ‘Laboratório 4: Como criar um portal do Power Apps'
+## Laboratório 4: Como criar um portal do Power Apps
 
 ### Aviso importante (Em vigor a partir de novembro de 2020):
 O Common Data Service foi renomeado para Microsoft Dataverse. Algumas terminologias no Microsoft Dataverse foram atualizadas. Por exemplo, a entidade (agora, **tabela**), o campo (agora, **coluna**) e o registro (agora **linha**) podem estar desatualizados. Lembre-se disso ao participar do laboratório. Esperamos atualizar todo o conteúdo em breve. 

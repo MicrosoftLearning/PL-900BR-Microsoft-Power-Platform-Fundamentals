@@ -77,7 +77,7 @@ Neste laboratório do Módulo 0, você irá adquirir um locatário de teste da P
 
 4.  Forneça novos detalhes para o portal
 
-    -   Digite **```Bellows College Visitors``` como o **Nome** do portal
+    -   Digite **```Bellows College Visitors```** como o **Nome** do portal
 
     -   Forneça um URL exclusivo; **algumacoisa**.powerappsportals.com (se o nome já estiver sendo usado, escolha outro)
 

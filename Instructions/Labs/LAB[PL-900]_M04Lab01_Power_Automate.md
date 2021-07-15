@@ -224,19 +224,19 @@ Os pré-requisitos seguintes foram identificados para que o projeto seja conclu�
     
     * Clique em **[...]** ao lado de **Obter um registro**, selecione **Renomear**. Digite **Criar visitante** como nome da etapa
     
-11.  Enviar notificação por email
+10.  Enviar notificação por email
 
      * Clique em **Adicionar uma ação** dentro de Aplicar a cada sequência. Adicione a ação **Enviar uma notificação por email** pela conexão **Email**.
 
-12.  Insira seu endereço de email em **Para**
+11.  Insira seu endereço de email em **Para**
 
-13.  Insira o seguinte texto no campo **Assunto**. **Nome Completo** é um conteúdo dinâmico da etapa **Criar visitante**.
+12.  Insira o seguinte texto no campo **Assunto**. **Nome Completo** é um conteúdo dinâmico da etapa **Criar visitante**.
 
    ```
    {Full Name} overstayed their welcome
    ```
    
-14.  Insira o seguinte texto no campo **Corpo da mensagem**. **Nome** é um conteúdo dinâmico da etapa **Criar edifício**.
+13.  Insira o seguinte texto no campo **Corpo da mensagem**. **Nome** é um conteúdo dinâmico da etapa **Criar edifício**.
 
    ```
    There is an overstay in building {Name}.
@@ -246,9 +246,9 @@ Os pré-requisitos seguintes foram identificados para que o projeto seja conclu�
    Campus Security
    ```
 
-17.  Selecione o nome do fluxo **Sem título** no canto superior esquerdo e renomeie-o para **Varredura de segurança**
+14.  Selecione o nome do fluxo **Sem título** no canto superior esquerdo e renomeie-o para **Varredura de segurança**
 
-18.  Clique em **Salvar**
+15.  Clique em **Salvar**
 
     Seu fluxo deve ser semelhante ao seguinte:
 
