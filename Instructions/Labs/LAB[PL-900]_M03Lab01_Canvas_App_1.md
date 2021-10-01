@@ -52,30 +52,30 @@ Seguiremos o esquema abaixo para projetar o aplicativo de tela:
 
 Nesta tarefa você vai criar um aplicativo de tela usando o modelo de layout do telefone com base no Microsoft Dataverse. Ao usar Visitas como uma tabela selecionada do Dataverse, o modelo gera um aplicativo Galeria – Exibir – Editar para gerenciar visitas ao campus.
 
-1.  Exiba os aplicativos no seu ambiente.
+1.  Comece criando um aplicativo a partir de dados
 
     -   Faça login em <https://make.powerapps.com>
 
     -   Selecione o **ambiente** no canto superior direito, se ele ainda não estiver definido
         para o seu ambiente de Prática.
 
-    -   Selecione **Aplicativos**.
+    -   Selecione o ícone **Dataverse** em **Começar a partir de dados** na tela Página inicial.
 
-2.  Criar um novo aplicativo de tela
+2.  Conectar à tabela Visitas
+    
+    -   Selecione **+ Nova conexão**
 
-    -   Clique em **Novo aplicativo** e selecione **Tela**.
+    -   Selecione **Microsoft Dataverse** e clique em **Criar**
 
-    -   Selecione **Layout do telefone** em **Microsoft Dataverse (herdado)**.
+    -   Localize e selecione a tabela **Visitas**
 
-4.  Selecione a tabela **Visitas**. Clique em **Conectar**.
+    -   Selecione **Conectar**
 
-6.  A janela **Boas-vindas ao Power Apps Studio** pode ser exibida. Clique em **Ignorar**.
+3.  A janela **Boas-vindas ao Power Apps Studio** pode ser exibida. Clique em **Ignorar**.
 
-7.  Salve o aplicativo
+4.  Salve o aplicativo
 
     -   Clique em **Arquivo \> Salvar**.
-
-    -   Digite **[Seu sobrenome] Equipe do Campus** como o nome do aplicativo.
 
     -   Clique em **Salvar**.
 
