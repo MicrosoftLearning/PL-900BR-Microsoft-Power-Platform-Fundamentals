@@ -71,7 +71,9 @@ A sua solução conterá várias tabelas após a conclusão de todas as personal
 
     -   Clique no menu suspenso **Editor** e selecione **+ Editor**
 
-    -   Na janela exibida, digite **Bellows College** no campo **Nome de exibição** 
+    -   Na janela exibida, digite **Bellows College** no campo **Nome de exibição**. 
+
+    -   Insira **BellowsCollege** no campo **Nome**.
     
     -   Digite **bc** no campo **Prefixo**
 
@@ -115,10 +117,10 @@ A sua solução conterá várias tabelas após a conclusão de todas as personal
 
     > Você deve ter **1 exibição** e **1 formulário** selecionados. 
     
-10.  Clique em **Adicionar** novamente. A tabela Contato com a Exibição e o Formulário selecionados será adicionada à solução recém-criada. 
-    
-    > Sua solução agora deve ter uma tabela: Contato.
+10.  Clique em **Adicionar** novamente. A tabela Contato com a Exibição e o Formulário selecionados será adicionada à solução recém-criada.
 
+> Sua solução agora deve ter uma tabela: Contato.
+    
 ## Tarefa 2: Criar a tabela Edifício
 
 1.  Você ainda deve estar com o navegador aberto na solução Gerenciamento de Campus. Se não estiver, abra a solução Gerenciamento de Campus seguindo estas etapas:
@@ -134,7 +136,7 @@ A sua solução conterá várias tabelas após a conclusão de todas as personal
     
     -   Digite **Edifício** no campo **Nome de exibição** 
     
-    -   Clique em **Criar**. O provisionamento da tabela será iniciado em segundo plano e você pode começar a adicionar outras tabelas e colunas.
+    -   Clique em **Salvar**. O provisionamento da tabela será iniciado em segundo plano e você pode começar a adicionar outras tabelas e colunas.
 
 ## Tarefa 3: Criar a tabela Visita e Colunas
 
@@ -144,7 +146,12 @@ Gostaríamos de atribuir a cada visita um número exclusivo que pode ser facilme
 
 > Usamos o comportamento **Independente de fuso horário** para registrar informações de data e hora porque o horário de uma visita é sempre local em relação à localização do edifício e não deve mudar quando visualizado de um fuso horário diferente. 
 
-1.  Escolha a solução **Gerenciamento de campus**
+1.  Você ainda deve estar com o navegador aberto na solução Gerenciamento de Campus. Se não estiver, abra a solução Gerenciamento de Campus seguindo estas etapas:
+
+    * Faça login em <https://make.powerapps.com> (se ainda não tiver feito)
+    
+    * Selecione **Soluções** e clique para abrir a solução **[Seu sobrenome] Gerenciamento de Campus**
+          que você acabou de criar.
 
 2. Criar a tabela Visita
 
@@ -152,9 +159,11 @@ Gostaríamos de atribuir a cada visita um número exclusivo que pode ser facilme
    
    * Digite **Visita** no campo **Nome de exibição** 
    
-   * Clique em **Criar**. O provisionamento da tabela será iniciado em segundo plano e você pode começar a adicionar outras colunas.
+   * Clique em **Salvar**. O provisionamento da tabela será iniciado em segundo plano e você pode começar a adicionar outras colunas.
 
 3. Criar a coluna Início agendado
+
+   * Selecione a tabela **Visita**
 
    * Verifique se a guia **Colunas** está selecionada e clique em **Adicionar coluna**.
    
@@ -262,7 +271,9 @@ Gostaríamos de atribuir a cada visita um número exclusivo que pode ser facilme
     
 4.  Clique em **Salvar tabela**.
 
-5.  No menu superior, selecione **Soluções** e clique em **Publicar todas as personalizações**.
+5.  Selecione **Voltar para soluções** na parte superior esquerda.
+
+6.  Selecione **Publicar todas as personalizações.**
 
 # Exercício \#4: Importar dados
 
