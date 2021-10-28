@@ -77,6 +77,8 @@ Nesta tarefa você vai criar um aplicativo de tela usando o modelo de layout do 
 
     -   Clique em **Arquivo \> Salvar**.
 
+    -   Insira [Seu sobrenome] Equipe do Campus como o **Nome do aplicativo**.
+
     -   Clique em **Salvar**.
 
 ## Tarefa 2: configurar o formulário Detalhes das visitas
