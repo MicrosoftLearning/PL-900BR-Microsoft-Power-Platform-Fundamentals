@@ -298,7 +298,7 @@ Nesta tarefa, você importará uma solução que contém o fluxo do Power Automa
 >   Estão faltando dependências. Instale as soluções a seguir antes de instalar esta...
 >
 >   Essa mensagem indica que o modelo de dados não está completo, o
->   prefixo do editor não é **bc** ou os nomes das tabelas **Edifício** e **Visita**
+>   prefixo do editor não é **bc** ou os nomes das tabelas **Building** e **Visits**
 >   são diferentes dos nomes listados nas etapas acima.
 
 6. Pressione **Próximo**. Você deverá restabelecer as conexões. 
