@@ -8,11 +8,6 @@ lab:
 
 ## Laboratório 4: Como criar um portal do Power Apps
 
-### Aviso importante (Em vigor a partir de novembro de 2020):
-O Common Data Service foi renomeado para Microsoft Dataverse. Algumas terminologias no Microsoft Dataverse foram atualizadas. Por exemplo, a entidade (agora, **tabela**), o campo (agora, **coluna**) e o registro (agora **linha**) podem estar desatualizados. Lembre-se disso ao participar do laboratório. Esperamos atualizar todo o conteúdo em breve. 
-
-Para obter mais informações e uma lista completa de termos afetados, visite [O que é o Microsoft Dataverse?](https://docs.microsoft.com/pt-br/powerapps/maker/common-data-service/data-platform-intro#terminology-updates)
-
 # Cenário
 
 O Bellows College é uma organização educacional que possui um campus com vários edifícios. Atualmente, as visitas ao campus são registradas em diários de papel. As informações não são coletadas de forma consistente e não há meios de analisar os dados sobre as visitas em todo o campus.
@@ -74,7 +69,7 @@ Seguiremos o esquema abaixo para projetar o portal do Power Apps:
 
     -   Na barra de comando, selecione **Nova página**.
 
-    -   Passe o mouse sobre **Layouts fixos** e escolha **Página com título**
+    - Selecione **Página de aterrissagem**
 
 3.  No painel de propriedades, em **Exibição**, troque o **Nome** de **Nova página nova (1)** para `Building Directory`.
 
@@ -86,7 +81,7 @@ Seguiremos o esquema abaixo para projetar o portal do Power Apps:
 
 1.  Adicione uma seção à página da Web.
 
-    -   Na tela (área que exibe a página da Web), selecione a seção **Cópia da página**. Essa é a caixa grande que cerca as 2 frases de texto que estão no meio da página.
+    - Na tela (área que exibe a página da Web), selecione um,a seção da página que não é uma coluna.
 
     -   Na caixa de ferramentas (lado esquerdo), selecione o ícone **Componentes**.
 
@@ -114,11 +109,35 @@ Seguiremos o esquema abaixo para projetar o portal do Power Apps:
 
     -   Selecione **Imagem** na área **Componentes do portal**.
 
-    -   No painel de propriedades, clique em **Selecionar uma imagem**. Localize e selecione **Product A.png**.
+    - No painel de propriedades, clique em **Selecionar uma imagem**. Localize e selecione **Pages.png**
     
     -   No painel de propriedades, clique no menu suspenso da seção **Formatação** e troque a **Largura** para 70% (lembre-se de digitar o símbolo %). Faça as alterações no dimensionamento da imagem até atingir o resultado desejado.
 
-4.  Clique em **Navegar pelo site** para ver como a página está.  Agora existe uma opção **Diretório de prédios** no menu principal.
+4.  Configure os direitos para exibir a lista de prédios 
+
+    -   No menu esquerdo, clique em Configurações (símbolo de engrenagem) e selecione **Ver mais configurações**. Isso abrirá as configurações adicionais em uma nova guia.
+
+    -   No menu esquerdo, role para baixo até **Segurança** e selecione **Permissões de tabela**.
+
+    -   Clique em **Novo** e adicione os seguintes valores:
+
+        -   **Nome**: Mostrar lista de prédios
+        -   **Nome da tabela**: Selecione Prédio (bc_building) do menu suspenso no lado direito.
+        -   **Site**: Clique na Lupa e selecione o seu site (Bellows College Visitors – [seu nome])
+        -   **Tipo de acesso**: Global
+        -   **Privilégios**: Leitura
+    
+    -   No menu superior, selecione **Salvar**.
+    
+    -   Role para baixo até a seção **Funções da Web** e **Adicione uma função da Web existente**.
+    
+    -   Clique na lupa, selecione **Usuários Anônimos** e clique em **Adicionar**.
+    
+    -   No menu superior, selecione **Salvar e fechar**.
+    
+    -   Volte para a guia anterior.
+
+5.  Clique em **Navegar pelo site** para ver como a página está.  Agora existe uma opção **Diretório de prédios** no menu principal.
 
     > Você precisa configurar o navegador para aceitar pop-ups.
 
@@ -184,7 +203,7 @@ Seguiremos o esquema abaixo para projetar o portal do Power Apps:
 
     -   Na caixa de ferramentas (lado esquerdo), selecione o ícone **Temas**.
     
-    -   Clique no botão **Habilitar tema básico** para ativar este recurso.
+    - Verifique se a opção de **Habilitar tema básico** está ativada.
     
     -   Em uma das predefinições, clique nas reticências (**...**) e escolha **Personalizar**.
     

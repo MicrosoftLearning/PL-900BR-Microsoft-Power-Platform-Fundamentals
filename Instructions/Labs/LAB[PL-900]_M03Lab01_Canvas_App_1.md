@@ -8,11 +8,6 @@ lab:
 
 ## Laboratório: Como criar um aplicativo de tela, Parte 1
 
-### Aviso importante (Em vigor a partir de novembro de 2020):
-O Common Data Service foi renomeado para Microsoft Dataverse. Algumas terminologias no Microsoft Dataverse foram atualizadas. Por exemplo, a entidade (agora, **tabela**), o campo (agora, **coluna**) e o registro (agora **linha**) podem estar desatualizados. Lembre-se disso ao participar do laboratório. Esperamos atualizar todo o conteúdo em breve.
-
-Para obter mais informações e uma lista completa de termos afetados, visite [O que é o Microsoft Dataverse?](https://docs.microsoft.com/pt-br/powerapps/maker/common-data-service/data-platform-intro#terminology-updates)
-
 # Cenário
 
 O Bellows College é uma organização educacional que possui um campus com vários edifícios. Atualmente, as visitas ao campus são registradas em diários de papel. As informações não são coletadas de forma consistente e não há meios de analisar os dados sobre as visitas em todo o campus. 
@@ -220,7 +215,7 @@ Como o número de visitas cresce continuamente, os usuários precisam de um recu
            TextSearchBox1.Text,
        	"bc_code","bc_name"
        ),
-     "bc_code",
+     "bc_scheduledstart",
      If(SortDescending1, Descending, Ascending)
    )
    ```
@@ -283,7 +278,7 @@ Neste exercício, você testará o aplicativo e o adicionará o aplicativo à su
    
 2. Selecione **Adicionar existente**, depois clique em **Aplicativo** e em **Aplicativo de tela**.
 
-3. Selecione a guia **Soluções externas**.
+3. Selecione a guia **Dataverse externa**.
 
 4. Selecione o aplicativo **Equipe do campus**, clique em **Adicionar**.
 

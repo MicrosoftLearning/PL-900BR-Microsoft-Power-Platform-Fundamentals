@@ -81,7 +81,7 @@ Neste exercício, você vai gerar seus próprios tópicos a partir do site de FA
 
 5.  Clique em **Iniciar.**
 
-6.  Cole o URL que você copiou na caixa de texto **Link para conteúdo online** e clique em **Adicionar**.
+6. Cole o URL que você copiou na caixa de texto **Link para conteúdo online** e clique em **Adicionar**. Se você copiou a URL completa, https:// estará listado duas vezes. Certifique-se de que o URL liste o protocolo apenas uma vez.
 
 7.  Clique em **Iniciar** e aguarde. Isso pode levar alguns minutos.
 
@@ -163,9 +163,9 @@ Neste exercício, você publicará o bot.
 
 7.  Insira o seguinte **Iniciador de conversa**:
     ```
-     "Quem corre maior risco de contrair doenças graves devido à COVID-19"
-     "O que significa doença mais grave"
-     "O que o CDC está fazendo em relação à COVID-19"
+     “Who is at higher risk for serious illness from COVID-19”
+     “What does more severe illness mean”
+     “What is the CDC doing about COVID-19”
     ```
     
 8.  Clique em **Salvar**.

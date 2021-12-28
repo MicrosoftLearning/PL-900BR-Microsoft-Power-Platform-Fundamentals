@@ -7,11 +7,6 @@ lab:
 # Módulo 4: Introdução ao Power Automate
 ## Laboratório: Saiba como construir uma solução automatizada
 
-### Aviso importante (Em vigor a partir de novembro de 2020):
-O Common Data Service foi renomeado para Microsoft Dataverse. Algumas terminologias no Microsoft Dataverse foram atualizadas. Por exemplo, a entidade (agora, **tabela**), o campo (agora, **coluna**) e o registro (agora **linha**) podem estar desatualizados. Lembre-se disso ao participar do laboratório. Esperamos atualizar todo o conteúdo em breve.
-
-Para obter mais informações e uma lista completa de termos afetados, visite [O que é o Microsoft Dataverse?](https://docs.microsoft.com/pt-br/powerapps/maker/common-data-service/data-platform-intro#terminology-updates)
-
 ## Cenário
 
 O Bellows College é uma organização educacional que possui um campus com vários edifícios. Atualmente as visitas ao campus são anotadas em papel. As informações não são coletadas de forma consistente e não há meios de analisar os dados sobre as visitas em todo o campus. 
@@ -57,23 +52,23 @@ Os pré-requisitos seguintes foram identificados para que o projeto seja conclu�
 
     -   Clique para abrir a solução **Gerenciamento de Campus**.
 
-2.  Clique em **Novo** e selecione **Fluxo na nuvem**. Isso abrirá o editor de fluxo do Power Automate em uma nova janela.
+2.  Clique em **Novo** e selecione **Automação**, **Fluxo da nuvem** e, então, **Automatizado**. Isso abrirá o editor de fluxo do Power Automate em uma nova janela.
 
-3. Selecione o **Microsoft Dataverse**.
+3. Em **Escolher o gatilho do fluxo**, pesquise por **Microsoft Dataverse**.
 
-4. Selecione o gatilho **Quando uma linha é criada, atualizada ou excluída**.
+4. Selecione o gatilho **Quando uma coluna for adicionada, modificada ou excluída**, e então clique em **Criar**.
 
-   * Selecione **Criar** para **Alterar o tipo**
+   * Selecione **Adicionado** para **Alterar o tipo**
    
    * Selecione **Visitas** em **Nome da tabela**
    
    * Selecione **Organização** em **Escopo**
    
-   * Na etapa de ativação, clique nas reticências (**...**) e clique em **Renomear**. Renomeie esse gatilho **"Quando uma visita é criada"**. Essas ações são importantes para que todos com permissão para editar o fluxo entendam o propósito da etapa sem precisar de maiores detalhes.
+   * Na etapa de ativação, clique nas reticências (**...**) e clique em **Renomear**. Renomeie esse gatilho **"Quando uma visita é adicionada"**. Essas ações são importantes para que todos com permissão para editar o fluxo entendam o propósito da etapa sem precisar de maiores detalhes.
 
 5. Selecione **Nova etapa**. Esta etapa é necessária para recuperar as informações dos visitantes, inclusive o endereço de email.
 
-6. Selecione **Microsoft Dataverse**.
+6. Pesquise por **Microsoft Dataverse**.
 
 7. Selecione **Obter uma linha por ID**. 
 
@@ -85,7 +80,7 @@ Os pré-requisitos seguintes foram identificados para que o projeto seja conclu�
 
 8. Clique em **Nova etapa**. Essa é a etapa que criará e enviará o email ao visitante.
 
-9. Procure por *email*, selecione o conector **Email** e a ação **Enviar uma notificação por email** 
+9. Pesquise por *e-mail*, selecione o conector **Office 365 Outlook** e a ação **Enviar um email (V2)**.
 
    * Se precisar Aceitar os Termos e as Condições para usar esta ação, clique em **Aceitar**.
    
@@ -166,11 +161,11 @@ Os pré-requisitos seguintes foram identificados para que o projeto seja conclu�
 
    -   Clique para abrir a solução **Gerenciamento de Campus**.
 
-2. Clique em **Novo** e selecione **Fluxo na nuvem**. Isso abrirá o editor de fluxo do Power Automate em uma nova janela.
+2. Clique em **Novo** e selecione **Automação**, **Fluxo da nuvem** e, então, **Agendado**. Isso abrirá o editor de fluxo do Power Automate em uma nova janela.
 
-3. Pesquise por *recorrência*, selecione o conector **Agenda** e, em seguida, escolha o gatilho **Recorrência**.
+3. Configure o fluxo para se repetir a cada **15** minutos.
 
-4. Defina **Intervalo** como **15 minutos**
+4. Clique em **Criar**.
 
 5. Clique em **Nova etapa**. Pesquise por *Atual* e selecione o conector **Microsoft Dataverse**. Selecione a ação **Listar linhas**.
 
@@ -226,7 +221,7 @@ Os pré-requisitos seguintes foram identificados para que o projeto seja conclu�
     
 10.  Enviar notificação por email
 
-     * Clique em **Adicionar uma ação** dentro de Aplicar a cada sequência. Adicione a ação **Enviar uma notificação por email** pela conexão **Email**.
+     * Clique em **Adicionar uma ação** dentro de Aplicar a cada sequência. Adicione a ação **Enviar um email (V2)** da conexão **Office 365 Outlook**.
 
 11.  Insira seu endereço de email em **Para**
 
@@ -236,7 +231,7 @@ Os pré-requisitos seguintes foram identificados para que o projeto seja conclu�
    {Full Name} overstayed their welcome
    ```
    
-13.  Insira o seguinte texto no campo **Corpo da mensagem**. **Nome** é um conteúdo dinâmico da etapa **Criar edifício**.
+13.  Insira o seguinte texto no campo **Corpo da mensagem**. **Nome** é um conteúdo dinâmico da etapa **Criar edifício**. Pode ser necessário rolar até o fim da lista.
 
    ```
    There is an overstay in building {Name}.

@@ -98,9 +98,9 @@ Vamos seguir as etapas abaixo para projetar e criar o painel do Power BI:
     
 2. Abra o Power BI Desktop e entre com suas credenciais quando solicitado.
 
-3. Selecione **Obter dados**.
+3. Selecione **Obter dados** e selecione **mais...**.
 
-4. Selecione **Power Platform** à esquerda, depois selecione **Common Data Service** e pressione **Conectar**.
+4. Selecione **Power Platform** à esquerda, depois selecione **Common Data Service (herdado)** e pressione **Conectar**. Se for solicitado, entre com as credenciais fornecidas e clique em **Conectar**.
 
 5. Cole o URL do ambiente que você copiou anteriormente dentro do campo **URL do servidor** e pressione **OK**.
 
