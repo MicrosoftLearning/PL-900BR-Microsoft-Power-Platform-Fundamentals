@@ -7,13 +7,6 @@ lab:
 Módulo 0: Introdução ao curso
 =================================
 
-## Laboratório: Validar ambiente de laboratório
-
-### Aviso importante (Em vigor a partir de novembro de 2020):
-O Common Data Service foi renomeado para Microsoft Dataverse. Algumas terminologias no Microsoft Dataverse foram atualizadas. Por exemplo, a entidade (agora, **tabela**), o campo (agora, **coluna**) e o registro (agora **linha**) podem estar desatualizados. Lembre-se disso ao participar do laboratório. Esperamos atualizar todo o conteúdo em breve. 
-
-Para obter mais informações e uma lista completa de termos afetados, visite [O que é o Microsoft Dataverse?](https://docs.microsoft.com/pt-br/powerapps/maker/common-data-service/data-platform-intro#terminology-updates)
-
 Cenário
 --------
 
@@ -27,7 +20,7 @@ Neste laboratório do Módulo 0, você irá adquirir um locatário de teste da P
 
 ## Exercício 1 – Configuração
 
-### Tarefa 1 – Adquirir o locatário de teste da Power Platform
+### Tarefa 1 – Adquirir o locatário de avaliação da Microsoft Power Platform
 
 1. Copie as **Credenciais do Microsoft 365** do Authorized Lab Hoster.
 
@@ -41,9 +34,11 @@ Neste laboratório do Módulo 0, você irá adquirir um locatário de teste da P
 
 6. Selecione **Sim** para permanecer conectado.
 
+7. Preencha as informações da sua conta e selecione **Introdução** para se inscrever na avaliação da Microsoft Power Platform.  
+
 ### Tarefa 2 – Criar o ambiente
 
-1.  Acesse <https://admin.powerplatform.microsoft.com> e faça login com as suas credenciais do Microsoft 365 se for solicitado novamente.
+1. Acesse <https://admin.powerplatform.microsoft.com> e faça login com as suas credenciais do Microsoft 365 se for solicitado novamente.
 
 2. Selecione **Ambientes** e clique em **+Novo.**
 

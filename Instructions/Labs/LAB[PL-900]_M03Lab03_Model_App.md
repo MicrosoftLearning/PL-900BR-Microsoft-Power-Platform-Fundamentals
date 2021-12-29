@@ -158,8 +158,7 @@ Agora, vamos clonar a exibição e criar uma nova para as visitas de hoje.
 
     -   Faça login em <https://make.powerapps.com>
 
-    -   No ambiente, clique para abrir a solução **Gerenciamento de Campus**
-        .
+    -   No ambiente, clique para abrir a solução **Gerenciamento de Campus**.
     
 2.  Criar aplicativo baseado em modelo
 
@@ -215,7 +214,7 @@ Agora, vamos clonar a exibição e criar uma nova para as visitas de hoje.
     
     -   Insira **Configurações** para **Título** no painel **Propriedades**.
     
-    -   Com a Área **Configurações** ainda selecionada, clique em **Adicionar**.
+    -   Com o grupo **Configurações** ainda selecionado, clique em **Adicionar**.
     
     -   Selecione **Subárea**.
     

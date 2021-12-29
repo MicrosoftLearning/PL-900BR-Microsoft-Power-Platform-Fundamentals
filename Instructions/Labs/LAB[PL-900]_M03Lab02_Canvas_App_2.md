@@ -7,11 +7,6 @@ lab:
 # Módulo 3: Introdução ao Power Apps
 ## Laboratório 2: Como criar um aplicativo de tela, parte 2
 
-### Aviso importante (Em vigor a partir de novembro de 2020):
-O Common Data Service foi renomeado para Microsoft Dataverse. Algumas terminologias no Microsoft Dataverse foram atualizadas. Por exemplo, a entidade (agora, **tabela**), o campo (agora, **coluna**) e o registro (agora **linha**) podem estar desatualizados. Lembre-se disso ao participar do laboratório. Esperamos atualizar todo o conteúdo em breve.
-
-Para obter mais informações e uma lista completa de termos afetados, visite [O que é o Microsoft Dataverse?](https://docs.microsoft.com/pt-br/powerapps/maker/common-data-service/data-platform-intro#terminology-updates)
-
 # Cenário
 
 O Bellows College é uma organização educacional que possui um campus com vários edifícios. Atualmente, as visitas ao campus são registradas em diários de papel. As informações não são coletadas de forma consistente e não há meios de analisar os dados sobre as visitas em todo o campus. 
@@ -62,18 +57,22 @@ Siga a estrutura de tópicos abaixo para desenvolver o aplicativo de tela:
     
 2.  Criar um novo aplicativo de tela
 
-    -   Clique em **Novo** e selecione **Aplicativo \| Aplicativo de Tela \| Formato de telefone**.
-        O Editor de Aplicativos será aberto em uma Nova janela.
-        
-    -   Clique em **Pular** caso apareça a caixa de diálogo Bem-vindo ao Power Apps Studio.
+    -   Clique em **Novo** e selecione **Aplicativo \| Aplicativo de Tela**.
+
+    -   No aplicativo de tela de uma janela em branco, insira **[Seu Sobrenome] Segurança do Campus** no campo de nome do aplicativo.
+
+    -   Selecione **Telefone** no campo de formato.
+
+    -   Clique em **Criar**.
+        O Editor de Aplicativos será aberto em uma Nova janela. Clique em **Pular** caso apareça a caixa de diálogo Bem-vindo ao Power Apps Studio.
     
 3.  Salvar o aplicativo de tela
 
     -   Clique em **Arquivo** e selecione **Salvar como**.
     
-    -   Verifique se **A nuvem** está selecionado. 
-    
-    -   Insira **[Seu Último Nome] Segurança do Campus** para Nome e clique em **Salvar**.
+    -   Verifique se **A nuvem** está selecionada clique em **Salvar**.
+
+    -   Verifique **[Seu Sobrenome] Segurança do Campus** para Nome e clique em **Salvar**.
         
     -   Clique na seta **Voltar** no canto superior esquerdo (abaixo de Power Apps) para retornar ao aplicativo.
 
